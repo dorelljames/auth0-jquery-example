@@ -88,6 +88,7 @@ $(document).ready(function() {
       if ("/" != current_location) {
         logout();
       }
+      $(".container").show();
     }
   };
 
