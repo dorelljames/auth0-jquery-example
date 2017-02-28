@@ -52,6 +52,7 @@ $(document).ready(function() {
   var route = function() {
     var id_token = localStorage.getItem('id_token');
     var current_location = window.location.pathname;
+    $(".container").show();
     if (undefined != id_token) {
       var profile = JSON.parse(localStorage.getItem('profile'));
 
