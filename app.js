@@ -59,10 +59,10 @@ $(document).ready(function() {
         case "/":
           $('#btn-login').hide();
           $('#btn-logout').show();
-          if (isAdmin(profile)) { $('#btn-go-admin').show(); }
-          if (isUser(profile)) { $('#btn-go-user').show(); }
+          $('#btn-go-admin').show();
+          $('#btn-go-user').show();
           break;
-        case "/user.html":
+        case "/user" || "/user.html":
           if (true != isUser(profile)) {
             window.location.href = "/";
           } else {
@@ -71,7 +71,7 @@ $(document).ready(function() {
             $('#nickname').text(profile.nickname);
           }
           break;
-        case "/admin.html":
+        case "/admin" || "/admin.html":
           if (true != isAdmin(profile)) {
             window.location.href = "/";
           } else {

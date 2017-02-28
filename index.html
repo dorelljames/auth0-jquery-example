@@ -21,8 +21,23 @@
         <h2>Welcome</h2>
         <button type="button" id="btn-login" class="btn btn-primary">Login</button>
         <button type="button" id="btn-logout" class="btn btn-default">Logout</button>
-        <a href="/admin.html" id="btn-go-admin" class="btn btn-default">Go to admin page</a>
-        <a href="/user.html" id="btn-go-user" class="btn btn-default">Go to user page</a>
+        <a href="/admin" id="btn-go-admin" class="btn btn-default">Go to admin page</a>
+        <a href="/user" id="btn-go-user" class="btn btn-default">Go to user page</a>
+
+        <br />
+        <br />
+        <h2>Credentials</h2>
+        <p>Use "galangdj@gmail.com" with password "test123" to login as administrator.</p>
+        <p>Signup to create a user account. Use that to login and you'll have user privileges (NOT admin)</p>
+        <br />
+        <br />
+        <h3>How To Test</h3>
+        <p>Use the buttons above to navigate to "user" or "admin" designated page.</p>
+        <br />
+        <br />
+        <h3>Expected Behavior</h3>
+        <p>If user is "admin", you'll be able to access the "/admin" page. If you access "/user", you will be redirected back to base domain.</p>
+        <p>If user is NOT "admin", you'll be able to access the "/user" page. If you access "/admin", you will be redirected back to base domain.</p>
       </div>
     </div>
   </div>
